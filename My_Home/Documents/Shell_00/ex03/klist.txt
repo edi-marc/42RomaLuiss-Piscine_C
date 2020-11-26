@@ -1,0 +1,24 @@
+Credentials cache: API:A1CBCDBF-A0D3-4ACB-8B43-8EC7B9FCA46F
+        Principal: edi-marc@42ROMA.IT
+    Cache version: 0
+
+Server: krbtgt/42ROMA.IT@42ROMA.IT
+Client: edi-marc@42ROMA.IT
+Ticket etype: aes256-cts-hmac-sha1-96, kvno 1
+Ticket length: 338
+Auth time:  Nov 24 08:22:43 2020
+End time:   Nov 24 18:22:43 2020
+Renew till: Dec  1 08:22:43 2020
+Ticket flags: enc-pa-rep, pre-authent, initial, renewable, proxiable, forwardable
+Addresses: addressless
+
+Server: HTTP/storage.42roma.it@42ROMA.IT
+Client: edi-marc@42ROMA.IT
+Ticket etype: aes256-cts-hmac-sha1-96, kvno 2
+Ticket length: 344
+Auth time:  Nov 24 08:22:43 2020
+Start time: Nov 24 08:22:44 2020
+End time:   Nov 24 18:22:43 2020
+Ticket flags: enc-pa-rep, transited-policy-checked, pre-authent, proxiable, forwardable
+Addresses: addressless
+
