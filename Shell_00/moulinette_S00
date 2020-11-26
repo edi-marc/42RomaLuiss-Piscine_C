@@ -1,0 +1,175 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r11p1.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Wed Nov 25 14:25:21 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-518b9253-f48b-4a4b-aa92-8093e9961e2d-3384199
+
+= Git history ==================================================================
+$> git -C /tmp/tmpyN6zvT/user log --pretty='%H - %an, %ad : %s'
+0522d0caf37287ce854d6d474aed502e32770780 - Emanuele Di marco, Wed Nov 25 11:26:12 2020 +0100 : renew kerberos ticket on ex03
+21d8b0c786786fc913101bf17f7674141994e330 - Emanuele Di marco, Wed Nov 25 11:17:39 2020 +0100 : exercise_09
+76917d05a21489dadcb8d6af09c84bf8f50291ae - Emanuele Di marco, Wed Nov 25 09:16:34 2020 +0100 : exercise_08
+357c0dc5ed8b47c7af1afa47f804ab21a7c6caeb - Emanuele Di marco, Tue Nov 24 20:09:27 2020 +0100 : exercise_07
+cdceb3ccd239b071c1a7e0142949f8dc9811f955 - Emanuele Di marco, Tue Nov 24 17:52:26 2020 +0100 : exercise_06
+f6459d1a7a64bba2ac8f4847227ddade85c9ffd0 - Emanuele Di marco, Tue Nov 24 15:49:29 2020 +0100 : exercise_05
+378b70be81e56ea74122d742aa2096f1d3b39473 - Emanuele Di marco, Tue Nov 24 14:40:20 2020 +0100 : exercise_04
+72ba10daa344a7ffda7cb5a9cf2c627530ef6eb0 - Emanuele Di marco, Tue Nov 24 14:36:41 2020 +0100 : exercise_03
+f9f832e2e8fae994f272a9d9ddb34973871a84b1 - Emanuele Di marco, Tue Nov 24 14:31:16 2020 +0100 : exercise_02
+114570e627201a1b2d930f8ccec99352cc06f4bb - Emanuele Di marco, Tue Nov 24 14:26:18 2020 +0100 : exercise_01
+a862077721439a804e653bd5e36643233ed3ccf2 - Emanuele Di marco, Tue Nov 24 14:20:12 2020 +0100 : exercise_0
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpyN6zvT/user
+total 8
+-rw-r--r--  1 root  wheel  2510 Nov 25 14:25 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex00
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex01
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex02
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex03
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex04
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex05
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex06
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex07
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex08
+drwxr-xr-x  3 root  wheel    96 Nov 25 14:25 ex09
+
+/tmp/tmpyN6zvT/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  2 Nov 25 14:25 z
+
+/tmp/tmpyN6zvT/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  2048 Nov 25 14:25 testShell00.tar
+
+/tmp/tmpyN6zvT/user/ex02:
+total 16
+-rw-r--r--  1 root  wheel  6144 Nov 25 14:25 exo2.tar
+
+/tmp/tmpyN6zvT/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  226 Nov 25 14:25 klist.txt
+
+/tmp/tmpyN6zvT/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  9 Nov 25 14:25 midLS
+
+/tmp/tmpyN6zvT/user/ex05:
+total 8
+-rwxr-xr-x  1 root  wheel  49 Nov 25 14:25 git_commit.sh
+
+/tmp/tmpyN6zvT/user/ex06:
+total 8
+-rwxr-xr-x  1 root  wheel  48 Nov 25 14:25 git_ignore.sh
+
+/tmp/tmpyN6zvT/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  538 Nov 25 14:25 b
+
+/tmp/tmpyN6zvT/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  68 Nov 25 14:25 clean
+
+/tmp/tmpyN6zvT/user/ex09:
+total 8
+-rw-r--r--  1 root  wheel  26 Nov 25 14:25 ft_magic
+ 
+= ex00 =========================================================================
+$> diff -U 3 z ref_output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+Grade: 5
+
+= ex02 =========================================================================
+Grade: 10
+
+= ex03 =========================================================================
+Grade: 10
+
+= ex04 =========================================================================
+$> sh ./test_midls.sh
+./test_midls.sh: line 4: sleep: command not found
+./test_midls.sh: line 6: sleep: command not found
+./test_midls.sh: line 8: sleep: command not found
+./test_midls.sh: line 10: sleep: command not found
+./test_midls.sh: line 12: sleep: command not found
+./test_midls.sh: line 14: sleep: command not found
+./test_midls.sh: line 16: sleep: command not found
+./test_midls.sh: line 18: sleep: command not found
+./test_midls.sh: line 20: sleep: command not found
+./test_midls.sh: line 29: sleep: command not found
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex05 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex06 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex07 =========================================================================
+$> diff -U 3 b 42b | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+$> sh ./test_clean.sh
+./test/.7~
+./test/test/#2#
+./test/test/titi/4~
+./test/test/titi/#4#
+./test/test/2~
+./test/#1#
+./test/titi/3~
+./test/titi/test/#5#
+./test/titi/test/5~
+./test/titi/#3#
+./test/1~
+ok
+
+Grade: 15
+
+= ex09 =========================================================================
+$> sh ./test_magic.sh
+-n testing ft_magic 1/2 ...
+/usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+/usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+< our file, > your file
+1c1
+< test42: 42 file$
+---
+> test42: 42 file type$
+[KO]
+
+Grade: 0
+
+= Final grade: 85 ==============================================================
