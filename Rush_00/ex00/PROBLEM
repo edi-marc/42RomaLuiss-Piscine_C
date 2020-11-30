@@ -1,0 +1,14 @@
+* immettendo come valore di riga e/o colonna il numero  positivo massimo rappresentabile con int 2^31 = (2147483648) == B
+
+  ---> il risultato e' un loop infinito sulle righe e/o colonne
+  
+  NOTES
+  
+  * il loop si verifica nel while di  "void rush (int x, int y)" ed in base a dove mettiamo B si verifica nella stampa delle righe e/o sulle colonne;
+  
+  * probabilmente quando aggiungo 1 a B , quel numero diventa con 1 in prima posizione e tutti 0, quindi viene considerato negativo ed il ciclo continua
+  
+  * tuttavia il ciclo si dovrebbe interrompere quando ho esaurito tutti i negativi 1---------1 (4 byte pieni di 1) poiche' esaurisco il masssimo numero
+    di byte disponibile per una variabile int.
+    
+    ---> molto probabilmente in esecuzione quando esco fuori dai byte disponibili, i bit in eccesso vengono troncati e quindi e come se ricominciassi da 0
