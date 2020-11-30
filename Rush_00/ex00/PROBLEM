@@ -1,4 +1,4 @@
-* immettendo come valore di riga e/o colonna il numero  positivo massimo rappresentabile con int 2^31 = (2147483648) == B
+* immettendo come valore di riga e/o colonna il numero  positivo massimo rappresentabile con int (2^31)-1 = (2147483647) == B
 
   ---> il risultato e' un loop infinito sulle righe e/o colonne
   
