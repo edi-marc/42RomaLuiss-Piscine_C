@@ -47,6 +47,10 @@ void	check_pos(int posx, int posy, int xmax, int ymax)
 ** only work with positive integer
 */
 
+/*
+** To avoid infinite loop set pos_elem = num_righe = 0 and num_righe < y and pos_elem < x but set check_pos(pos_elem + 1, num_righe + 1, x, y); 
+*/
+
 void	rush(int x, int y)
 {
 	int pos_elem;
