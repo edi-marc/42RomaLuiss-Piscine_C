@@ -1,0 +1,212 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r9p5.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Wed Dec  2 11:17:31 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-49b5938e-7d3e-4ed9-9184-cb0e85ce78f9-3387815
+
+= Git history ==================================================================
+$> git -C /tmp/tmpIGNYNu/user log --pretty='%H - %an, %ad : %s'
+50a94d4daa835a5390cedd2e4dc9c185357a2cac - Emanuele Di marco, Wed Dec 2 08:12:03 2020 +0100 : exercise 08 - ERROR
+1ad031d12515aac0166a0ae93ed1beedbbd689b2 - Emanuele Di marco, Tue Dec 1 18:17:14 2020 +0100 : exercise 07
+13faaa4a1c122962e58c51061119428dc4eff17c - Emanuele Di marco, Mon Nov 30 20:07:01 2020 +0100 : exercise 06
+174188a1047573a003a93388da66c3daa04e47bb - Emanuele Di marco, Mon Nov 30 14:02:36 2020 +0100 : exercise 05
+7ab5e724b10028c636e3ac1eac093b10924d65fd - Emanuele Di marco, Thu Nov 26 20:24:31 2020 +0100 : exercise 0, 1, 2, 3, 4
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpIGNYNu/user
+total 8
+-rw-r--r--  1 root  wheel  1610 Dec  2 11:17 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex00
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex01
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex02
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex03
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex04
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex05
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex06
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex07
+drwxr-xr-x  3 root  wheel    96 Dec  2 11:17 ex08
+
+/tmp/tmpIGNYNu/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  959 Dec  2 11:17 ft_putchar.c
+
+/tmp/tmpIGNYNu/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1034 Dec  2 11:17 ft_print_alphabet.c
+
+/tmp/tmpIGNYNu/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  1042 Dec  2 11:17 ft_print_reverse_alphabet.c
+
+/tmp/tmpIGNYNu/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  1033 Dec  2 11:17 ft_print_numbers.c
+
+/tmp/tmpIGNYNu/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  1017 Dec  2 11:17 ft_is_negative.c
+
+/tmp/tmpIGNYNu/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  1640 Dec  2 11:17 ft_print_comb.c
+
+/tmp/tmpIGNYNu/user/ex06:
+total 8
+-rw-r--r--  1 root  wheel  1825 Dec  2 11:17 ft_print_comb2.c
+
+/tmp/tmpIGNYNu/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  1333 Dec  2 11:17 ft_putnbr.c
+
+/tmp/tmpIGNYNu/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  1123 Dec  2 11:17 ft_print_combn.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putchar.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putchar.c ft_putchar.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_putchar.c ft_putchar.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./k3c8lpyr7jpcmvh4lubzzkrp
+$> ./k3c8lpyr7jpcmvh4lubzzkrp
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_alphabet.c ft_print_alphabet.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_print_alphabet.c ft_print_alphabet.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./efhvorup6cip85zk47q8ier5
+$> ./efhvorup6cip85zk47q8ier5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_reverse_alphabet.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_reverse_alphabet.c ft_print_reverse_alphabet.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_print_reverse_alphabet.c ft_print_reverse_alphabet.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./8ad7vch2pnc09n93yiw59a8d
+$> ./8ad7vch2pnc09n93yiw59a8d
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_numbers.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_numbers.c ft_print_numbers.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_print_numbers.c ft_print_numbers.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./5ivp0m433z0irzysgfmy4x69
+$> ./5ivp0m433z0irzysgfmy4x69
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_is_negative.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_is_negative.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9gbeuwweh0yrrmyn5uont077
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb.c ft_print_comb.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb.c ft_print_comb.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./5pn843vdk2nyhd4zm121z1rf
+$> ./5pn843vdk2nyhd4zm121z1rf
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_comb2.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb2.c ft_print_comb2.c -o user_exe 
+
+$> gcc -Wextra -Wall -Werror test_ft_print_comb2.c ft_print_comb2.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./20464yjnspou8blchorq6beg
+$> ./20464yjnspou8blchorq6beg
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./jzif0bqfic5gzqs2bb5akipo
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_combn.c | grep -E '^(Error|Warning)'
+Error (line 21): declarations must be followed by one empty line in ft_print_combn
+Error (line 25): spaces at the end of line
+Error (line 28): Empty line
+Error (line 29, col 1): missing space after while
+Error (line 31, col 2): missing space after while
+Error (line 31, col 7): space after (
+Error (line 31, col 16): space before )
+Error (line 36): Empty line
+Error (line 38): spaces at the end of line
+Error (line 39): spaces at the end of line
+Error (line 39, col 1): no newline after block
+
+Norme check FAILED
+Grade: 0
+
+= Final grade: 85 ==============================================================
