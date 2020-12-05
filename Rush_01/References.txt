@@ -1,0 +1,28 @@
+* CSP - Constriction Satisfaction Problem
+    "Problema delle 8 regine";
+    
+* Backtracking algorhytm
+    Solution for Sudoku and also Puzzle Skycreaper;
+    
+    
+ALSO:
+
+* Problema --> STATO / DOMINIO / VINCOLI
+    Nostro caso --> casella 4 X 4 / [1-4] / Non ripetizioni per riga o colonna e controllo della visibilita';
+    
+    Possiamo semplificare il nostro problema con delle inferenze, ovvero delle considerazioni che per logica scartano possibili stati
+    perche' ritenuti non possibili;
+    
+    Nel nostro caso le inferenze sono il numero 1 o il numero 4 nelle indicazioni di visibilita':
+    
+      1 --> 4 (nella prima)
+      4 --> 1234
+      
+* Teoria dei grafi --> Struttura ad alberi
+
+* Sfrutto la ricorsivita' per bloccare le caselle giuste esempio (caselle con 1 e 4 di visibilita') e poi mi sposto
+  su una casella e comincio a testare tutte le possibili combinazioni con le caselle adiacenti fino a quanto non arrivo
+  o ad uno stato completo che non viola i vincoli OPPURE ad una negazione dei vincoli e dunque escludo l' ultimo numero testato e ripercorro
+  l' albero al contrario ripercorrendo altri percorsi.
+  
+  *//*
