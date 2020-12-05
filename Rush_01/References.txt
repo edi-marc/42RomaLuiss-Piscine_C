@@ -25,4 +25,4 @@ ALSO:
   o ad uno stato completo che non viola i vincoli OPPURE ad una negazione dei vincoli e dunque escludo l' ultimo numero testato e ripercorro
   l' albero al contrario ripercorrendo altri percorsi.
   
-  *//*
+  SOLUZIONE -> STATO COMPLETO CHE NON VIOLA I VINCOLI;
