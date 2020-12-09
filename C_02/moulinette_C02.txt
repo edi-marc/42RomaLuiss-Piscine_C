@@ -1,0 +1,276 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r3p1.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Tue Dec  8 19:19:29 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-0c6482ab-22b0-4803-801f-4783bb5f3a55-3399206
+
+= Git history ==================================================================
+$> git -C /tmp/tmp9iTR6k/user log --pretty='%H - %an, %ad : %s'
+4ac10c7b2f05b0ddce80e787a5c52a7f4e40d046 - Emanuele Di marco, Tue Dec 8 09:39:21 2020 +0100 : useless correction
+4751358304d134c0a68fdbe22308c47930e46d9f - Emanuele Di marco, Tue Dec 8 09:25:33 2020 +0100 : correction
+5b77e6b24dee1a7080d048adb56608122762528f - Emanuele Di marco, Mon Dec 7 20:38:04 2020 +0100 : modified
+9d043aef871ed551b1953af7ebe26f04431b65b5 - Emanuele Di marco, Mon Dec 7 20:35:00 2020 +0100 : correction
+26886d35aac71b7726bde149b4bd0045c6aef5af - Emanuele Di marco, Mon Dec 7 20:14:21 2020 +0100 : correction
+773adb5262a64a126380cc7738a1b287a3a8b8f3 - Emanuele Di marco, Mon Dec 7 19:39:29 2020 +0100 : some corrections
+01e59ae48b146dea9b2f0bad6e7bc2067f857407 - Emanuele Di marco, Mon Dec 7 19:30:36 2020 +0100 : correct exercise - using pointer instead of array
+c554a8e07de39e3f1295b746643fd77e6aaecf10 - Emanuele Di marco, Mon Dec 7 18:57:52 2020 +0100 : exercise 10
+51253cd28e5e832dfd7eaa597826b8fd6a59673c - Emanuele Di marco, Mon Dec 7 16:52:48 2020 +0100 : exercise 09
+26c7b9675c6298ab74ecc97b4b4dc39c27449e38 - Emanuele Di marco, Mon Dec 7 13:54:56 2020 +0100 : ex07 ex08
+1185ebcbb9ff17dad78a7440342f83befa8ee14e - Emanuele Di marco, Mon Dec 7 12:53:23 2020 +0100 : exercise 06
+998637fa52381e14fe0312f40a566b1288d6f349 - Emanuele Di marco, Mon Dec 7 11:40:53 2020 +0100 : exercise 05
+f6eddeeaccf8be6724055a938e2bf8912a1ea7fa - Emanuele Di marco, Mon Dec 7 11:16:28 2020 +0100 : exercise 04
+0fa6dabf4282aa61037e117de1eb403b588273f2 - Emanuele Di marco, Mon Dec 7 10:44:40 2020 +0100 : exercise 03
+0433abc87a09d811bd361a053630e863983828db - Emanuele Di marco, Mon Dec 7 10:27:42 2020 +0100 : exercise 01 02
+d699bef7adbb47cc46da9ddd1161f7a26eaef886 - Emanuele Di marco, Thu Dec 3 16:55:27 2020 +0100 : exercise 00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp9iTR6k/user
+total 16
+-rw-r--r--  1 root  wheel  4646 Dec  8 19:19 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex00
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex01
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex02
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex03
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex04
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex05
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex06
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex07
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex08
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex09
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex10
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex11
+drwxr-xr-x  3 root  wheel    96 Dec  8 19:19 ex12
+
+/tmp/tmp9iTR6k/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  1042 Dec  8 19:19 ft_strcpy.c
+
+/tmp/tmp9iTR6k/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1106 Dec  8 19:19 ft_strncpy.c
+
+/tmp/tmp9iTR6k/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  1123 Dec  8 19:19 ft_str_is_alpha.c
+
+/tmp/tmp9iTR6k/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  1090 Dec  8 19:19 ft_str_is_numeric.c
+
+/tmp/tmp9iTR6k/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  1093 Dec  8 19:19 ft_str_is_lowercase.c
+
+/tmp/tmp9iTR6k/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  1092 Dec  8 19:19 ft_str_is_uppercase.c
+
+/tmp/tmp9iTR6k/user/ex06:
+total 8
+-rw-r--r--  1 root  wheel  1093 Dec  8 19:19 ft_str_is_printable.c
+
+/tmp/tmp9iTR6k/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  1055 Dec  8 19:19 ft_strupcase.c
+
+/tmp/tmp9iTR6k/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  1059 Dec  8 19:19 ft_strlowcase.c
+
+/tmp/tmp9iTR6k/user/ex09:
+total 8
+-rw-r--r--  1 root  wheel  1835 Dec  8 19:19 ft_strcapitalize.c
+
+/tmp/tmp9iTR6k/user/ex10:
+total 8
+-rw-r--r--  1 root  wheel  1265 Dec  8 19:19 ft_strlcpy.c
+
+/tmp/tmp9iTR6k/user/ex11:
+total 8
+-rw-r--r--  1 root  wheel  1008 Dec  8 19:19 ft_putstr_non_printable.c
+
+/tmp/tmp9iTR6k/user/ex12:
+total 8
+-rw-r--r--  1 root  wheel  1018 Dec  8 19:19 ft_print_memory.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcpy.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./oq1ee86tcyw0xf7tkuachu7n
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strncpy.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./isqwrym3uui6yvcvcb4eaedk
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_alpha.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_alpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hhb4aqp9avndpzj8sx5qb03x
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_numeric.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_numeric.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./qnz3q5dvo47nj72psf1t5tfo
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_lowercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_lowercase.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./xkp6itc7e97djc6rcv23pyvb
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_uppercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_uppercase.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./bdgnrk7v73j808611h6ebyta
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_printable.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ywyqngj0kyveeeneqt90w1fc
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strupcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strupcase.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./eyoeazxieacebb5rk5pszmt5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlowcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strlowcase.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./14m11ia4s2ajlrdptzge2k1n
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex09 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcapitalize.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strcapitalize.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9q30x9ny0tktijo9fx6g61qe
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex10 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlcpy.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./jo30g8x70olr568k51pvxqsa
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2020-12-08 18:19:46.000000000 +0000$
++++ test1.output	2020-12-08 18:19:46.000000000 +0000$
+@@ -1 +1 @@$
+-Gsr <=> 3pVsK <=> 4QeiRs <=> 5bbN <=> 3g <=> 1Zep <=> 19abfJcJ <=> 6Uiqbpc <=> 6rCihKRcJu <=> 13dmsPdVHwC <=> 18ATV <=> 3kCqT <=> 4wLg <=> 13QXfgdl <=> 6HaoFgkvpQKgUUbQjKAc <=> 19tvvAMeN <=> 7sOMuTrNZAr <=> 10hcGKILXou <=> 18HlqpBGZ <=> 7YyLZWB <=> 6fAAma <=> 18WownCReeMrkGlakOQXxA <=> 20EPegI <=> 16KDCTUfriFoZBHoaok <=> 17GreWTJuoTTJFQpj <=> 17twx <=> 3kW <=> 2Lyel <=> 4Qi <=> 2sKvC <=> 4xbtdAlRGbHOSKBip <=> 16Ud <=> 5PRWHIAWDRuTJtH <=> 14PCSRRJwniqzfZdMCvVTk <=> 20UpTzgpDgxBzRF <=> 13majfyuHhf <=> 9YVrb <=> 9NQCzbExLrA <=> 12hhYgRafaScJ <=> 11nJl <=> 3QSFkcdQfpKbCKVmfe <=> 17YwJzcPz <=> 7mTQzHfLvdvlqFEMjhKT <=> 19xGYiT <=> 5miUyCcZBd <=> 9GSJedwG <=> 7r <=> 1aIPOMjbIb <=> 9XYq <=> 3IUKAsmO <=> 15TDOHVnuwBGDyrkvJS <=> 17uTGFOdaahajVh <=> 13GbahhrVbTY <=> 10RWMPnptKq <=> 18tNUnQTdKGcuN <=> 12CddlUYeKMtDmY <=> 13jKri <=> 4ndKQkElaiSZsIigthpNZ <=> 20hRyEicpcyYE <=> 18BnXklz <=> 6td <=> 15ZbWzLWezetIBkhIMiU <=> 18MYqoCmDcpt <=> 19cgPSHFGoe <=> 9YyDRRNbiOqDH <=> 12fRtBAwyt <=> 9ggUOjWziJyFGlHrfK <=> 17uOspdsKG <=> 8ksJbeGSgFpunOgF <=> 15GsyqXmIDLzFf <=> 12TI <=> 2Em <=> 10adHgXrzpfFXhgEnGNPwY <=> 20jDVkGDfWgByPk <=> 13t <=> 15mB <=> 12uDpmiUaw <=> 11ZqlofagVxSWYEE <=> 16PCesFrGzMwC <=> 11aPKYKPAMecG <=> 11mmUd <=> 4bGhEkOHfxOfwr <=> 13CXcWiv <=> 6rEejfVxU <=> 8 <=> 13VgAVsGSVa <=> 10LKWQxXF <=> 16rzQHxlTLaTmA <=> 12v <=> 5qn <=> 9oTcGuhdmHpOIkdmska <=> 18eoflQgiSJqLa <=> 15EYLGjhDGZsdZKXFLxc <=> 20egftVn <=> 16QNdDnj <=> 15HYmHl <=> 5oQhkWmB <=> 17fEcDVVBLqka <=> 18brwOZoYH <=> 8012345678 <=> 10abcdefgh <=> 10;[]'/.,_-) <=> 10 <=> 0dcbsidwhiu <=> 10$
+\ No newline at end of file$
++Gsr <=> 3pVsK <=> 4QeiRs <=> 5bbN <=> 3g <=> 1Zep <=> 19abfJcJ <=> 6Uiqbpc <=> 6rCihKRcJu <=> 13dmsPdVHwC <=> 18ATV <=> 3kCqT <=> 4wLg <=> 13QXfgdl <=> 6HaoFgkvpQKgUUbQjKAc <=> 19tvvAMeN <=> 7sOMuTrNZAr <=> 10hcGKILXou <=> 18HlqpBGZ <=> 7YyLZWB <=> 6fAAma <=> 18WownCReeMrkGlakOQXxA <=> 20EPegI <=> 16KDCTUfriFoZBHoaok <=> 17GreWTJuoTTJFQpj <=> 17twx <=> 3kW <=> 2Lyel <=> 4Qi <=> 2sKvC <=> 4xbtdAlRGbHOSKBip <=> 16Ud <=> 5PRWHIAWDRuTJtH <=> 14PCSRRJwniqzfZdMCvVTk <=> 20UpTzgpDgxBzRF <=> 13majfyuHhf <=> 9YVrb <=> 9NQCzbExLrA <=> 12hhYgRafaScJ <=> 11nJl <=> 3QSFkcdQfpKbCKVmfe <=> 17YwJzcPz <=> 7mTQzHfLvdvlqFEMjhKT <=> 19xGYiT <=> 5miUyCcZBd <=> 9GSJedwG <=> 7r <=> 1aIPOMjbIb <=> 9XYq <=> 3IUKAsmO <=> 15TDOHVnuwBGDyrkvJS <=> 17uTGFOdaahajVh <=> 13GbahhrVbTY <=> 10RWMPnptKq <=> 18tNUnQTdKGcuN <=> 12CddlUYeKMtDmY <=> 13jKri <=> 4ndKQkElaiSZsIigthpNZ <=> 20hRyEicpcyYE <=> 18BnXklz <=> 6td <=> 15ZbWzLWezetIBkhIMiU <=> 18MYqoCmDcpt <=> 19cgPSHFGoe <=> 9YyDRRNbiOqDH <=> 12fRtBAwyt <=> 9ggUOjWziJyFGlHrfK <=> 17uOspdsKG <=> 8ksJbeGSgFpunOgF <=> 15GsyqXmIDLzFf <=> 12TI <=> 2Em <=> 10adHgXrzpfFXhgEnGNPwY <=> 20jDVkGDfWgByPk <=> 13t <=> 15mB <=> 12uDpmiUaw <=> 11ZqlofagVxSWYEE <=> 16PCesFrGzMwC <=> 11aPKYKPAMecG <=> 11mmUd <=> 4bGhEkOHfxOfwr <=> 13CXcWiv <=> 6rEejfVxU <=> 8 <=> 13VgAVsGSVa <=> 10LKWQxXF <=> 16rzQHxlTLaTmA <=> 12v <=> 5qn <=> 9oTcGuhdmHpOIkdmska <=> 18eoflQgiSJqLa <=> 15EYLGjhDGZsdZKXFLxc <=> 20egftVn <=> 16QNdDnj <=> 15HYmHl <=> 5oQhkWmB <=> 17fEcDVVBLqka <=> 18brwOZoYH <=> 8012345678 <=> 10abcdefgh <=> 10;[]'/.,_-) <=> 10 <=> 0 <=> 10$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= ex11 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr_non_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putstr_non_printable.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./7gdpaid1jcr695yim3cjfsao
+Command './7gdpaid1jcr695yim3cjfsao' got killed by a Bus error (Signal -10)
+Grade: 0
+
+= ex12 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_print_memory.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_print_memory.c -o user_exe 
+ft_print_memory.c:15:8: error: incomplete type 'void' is not assignable
+        *addr = size;
+        ~~~~~ ^
+ft_print_memory.c:16:2: error: implicit declaration of function 'write' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        write(1, Nothing to see here, 19);
+        ^
+2 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 65 ==============================================================
