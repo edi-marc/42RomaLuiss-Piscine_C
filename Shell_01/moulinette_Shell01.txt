@@ -1,0 +1,167 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r8p4.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec 11 12:28:32 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-c4133313-8073-436c-84d3-40cb5097f3d9-3388731
+
+= Git history ==================================================================
+$> git -C /tmp/tmpnTpRta/user log --pretty=%H - %an, %ad : %s
+96c4f9d42a067bcf6da09e1104231783cded4c0f - Emanuele Di marco, Fri Dec 11 09:43:08 2020 +0100 : Shell_01
+b460fc5522cb270c782c9f17ad154d0a5020bf98 - Emanuele Di marco, Thu Dec 10 20:52:53 2020 +0100 : ex01 ex02
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpnTpRta/user
+total 8
+-rw-r--r--  1 root  wheel  660 Dec 11 12:28 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex01
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex02
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex03
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex04
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex05
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex06
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex07
+drwxr-xr-x  3 root  wheel   96 Dec 11 12:28 ex08
+
+/tmp/tmpnTpRta/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  41 Dec 11 12:28 print_groups.sh
+
+/tmp/tmpnTpRta/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  53 Dec 11 12:28 find_sh.sh
+
+/tmp/tmpnTpRta/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  46 Dec 11 12:28 count_files.sh
+
+/tmp/tmpnTpRta/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  51 Dec 11 12:28 MAC.sh
+
+/tmp/tmpnTpRta/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  2 Dec 11 12:28 "\?$*MaRViN*$?\"
+
+/tmp/tmpnTpRta/user/ex06:
+total 8
+-rw-r--r--  1 root  wheel  21 Dec 11 12:28 skip.sh
+
+/tmp/tmpnTpRta/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  20 Dec 11 12:28 r_dwssap.sh
+
+/tmp/tmpnTpRta/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  20 Dec 11 12:28 add_chelou.sh
+ 
+= ex01 =========================================================================
+===========
+testing
+nobody,everyone,localaccounts,_lpoperator
+VS
+nobody,everyone,localaccounts,_lpoperator
+===========
+< le notre, > le votre
+groups: noob: no such user
+id: noob: no such user
+===========
+testing
+
+VS
+
+===========
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex02 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex03 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex04 =========================================================================
+===========
+testing
+18:7e:b9:04:b6:eb
+e2:00:a0:b0:ee:00
+e2:00:a0:b0:ee:01
+e2:00:a0:b0:ee:00
+3e:22:fb:e4:07:b4
+3c:22:fb:e4:07:b4
+0e:22:fb:e4:07:b4
+3a:12:85:42:4e:c0
+
+VS
+18:7e:b9:04:b6:eb
+e2:00:a0:b0:ee:00
+e2:00:a0:b0:ee:01
+e2:00:a0:b0:ee:00
+3e:22:fb:e4:07:b4
+3c:22:fb:e4:07:b4
+0e:22:fb:e4:07:b4
+3a:12:85:42:4e:c0
+
+===========
+< le notre, > le votre
+ok
+
+Grade: 10
+
+= ex05 =========================================================================
+-rw-r--r--  1 deepthought  deepthought  2 Dec 11 11:28 "\?$*MaRViN*$?\"
+OK
+
+Grade: 15
+
+= ex06 =========================================================================
+ok
+
+Grade: 15
+
+= ex07 =========================================================================
+./r_dwssap.sh: line 1: Nothing: command not found
+< our file, > your file
+1d0
+< toorsmvc_, toor, tocevod_, svc_, sstq_, sorebrek_brk_, soibten_, sergtsop_, scodved_, rlaxcm_, rgmecived_, revreswodniw_, revressta_, rednopsersndm_.
+\ No newline at end of file
+KO with 3 and 16
+
+Grade: 0
+
+= ex08 =========================================================================
+./add_chelou.sh: line 1: Nothing: command not found
+./add_chelou.sh: line 1: Nothing: command not found
+./add_chelou.sh: line 1: Nothing: command not found
+1,3d0
+< Segmentation fault
+< Salut
+< uigau 
+KO
+
+Grade: 0
+
+= Final grade: 70 ==============================================================
