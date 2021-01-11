@@ -1,0 +1,196 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r1p4.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec 11 08:12:47 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-c04e335e-fa25-4cf5-9bfb-b9777804d306-3405499
+
+= Git history ==================================================================
+$> git -C /tmp/tmp5KYo4T/user log --pretty='%H - %an, %ad : %s'
+06315aca711836dad6a19d99930674a102262982 - Emanuele Di marco, Thu Dec 10 17:10:46 2020 +0100 : atoi_base
+80b7a4da7082d2700031d19cc74c6d0e985100ca - Emanuele Di marco, Thu Dec 10 13:58:34 2020 +0100 : exclude non printable char on possible base ex04
+fb2894744deeda151db675e69ebabb47bebe5b97 - Emanuele Di marco, Thu Dec 10 13:08:10 2020 +0100 : ex04
+58879b8402b47c09caa703302d11d63268fb24f9 - Emanuele Di marco, Thu Dec 10 08:31:32 2020 +0100 : correction to atoi
+bc67ef59114c4f6893d141e31145aeef9580bb82 - Emanuele Di marco, Thu Dec 10 08:11:04 2020 +0100 : atoi norminetted
+9ea3e8659c44f94b5fca7b4126e4f4c9ec79303b - Emanuele Di marco, Wed Dec 9 20:52:33 2020 +0100 : atoi
+acc4b36fdeb5c8984be871fd304d62ba21d5b8b3 - Emanuele Di marco, Wed Dec 9 15:45:18 2020 +0100 : ex02 added
+b5565788623842e1995c22e738588e5d74dbf4b5 - Emanuele Di marco, Wed Dec 9 09:57:10 2020 +0100 : ex01
+ce8a6bce07d8f9ffb6aad022a5b855c95b782c3e - Emanuele Di marco, Wed Dec 9 09:27:54 2020 +0100 : ex00
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp5KYo4T/user
+total 8
+-rw-r--r--  1 root  wheel  2315 Dec 11 08:12 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex00
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex01
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex02
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex03
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex04
+drwxr-xr-x  3 root  wheel    96 Dec 11 08:12 ex05
+
+/tmp/tmp5KYo4T/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  974 Dec 11 08:12 ft_strlen.c
+
+/tmp/tmp5KYo4T/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1002 Dec 11 08:12 ft_putstr.c
+
+/tmp/tmp5KYo4T/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  1309 Dec 11 08:12 ft_putnbr.c
+
+/tmp/tmp5KYo4T/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  1517 Dec 11 08:12 ft_atoi.c
+
+/tmp/tmp5KYo4T/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  1987 Dec 11 08:12 ft_putnbr_base.c
+
+/tmp/tmp5KYo4T/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  2287 Dec 11 08:12 ft_atoi_base.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlen.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlen.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./dg3zb3dba4pl64f6btjxej5c
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror test_ft_putstr.c ft_putstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./8gt47cdcmiaboqwi0x5f8qhy
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ktxkkzvosqi3qy3pznq2vxot
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_atoi.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_atoi.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./wtht8your7h0pqu8b1gfq6so
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putnbr_base.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putnbr_base.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./zmysy4dipj1qr91yynzjw0k2
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_atoi_base.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_atoi_base.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hbmvvrt4ftn4gtbdrk8jpw5d
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2020-12-11 07:13:01.000000000 +0000$
++++ test1.output	2020-12-11 07:13:00.000000000 +0000$
+@@ -1,17 +1,17 @@$
+-63$
+-0$
+-44$
+-15658734$
+-34$
+--34$
+--34$
+-0$
+--34$
+-34$
+-34$
+-17$
+--17$
+-17$
++42$
++21$
++42$
++14754629$
++43$
++-44$
++-46$
++0$
++-46$
++46$
++47$
++29$
++-26$
++27$
+ 1$
+ 4$
+ 8$
+@@ -23,8 +23,8 @@$
+ 0$
+ 0$
+ 0$
+--4369$
+-0$
++-4096$
++-15$
+ 0$
+ 0$
+ 0$
+@@ -40,7 +40,7 @@$
+ 0$
+ 0$
+ 0$
+-8848$
++8701$
+ 0$
+ 0$
+ 1$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 85 ==============================================================
