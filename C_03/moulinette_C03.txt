@@ -1,0 +1,221 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r7p4.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec 11 20:19:39 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:vogsphere/intra-uuid-ec86f01d-5119-46ea-8034-aea035f33de2-3408536
+
+= Git history ==================================================================
+$> git -C /tmp/tmpzZeb_H/user log --pretty='%H - %an, %ad : %s'
+59194f900fff46fe70833b10913528496df3cf1f - Emanuele Di marco, Fri Dec 11 18:19:54 2020 +0100 : ex01 modified
+c33f966c789897eab6fd0607248dcc501c230b9f - Emanuele Di marco, Fri Dec 11 17:56:14 2020 +0100 : ex04
+e816276748ac2805fff2d9e54b6c970eeb92648a - Emanuele Di marco, Fri Dec 11 17:41:43 2020 +0100 : ex00 01 02 03
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpzZeb_H/user
+total 8
+-rw-r--r--  1 root  wheel  947 Dec 11 20:19 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex00
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex01
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex02
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex03
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex04
+drwxr-xr-x  3 root  wheel   96 Dec 11 20:19 ex05
+
+/tmp/tmpzZeb_H/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  1009 Dec 11 20:19 ft_strcmp.c
+
+/tmp/tmpzZeb_H/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1138 Dec 11 20:19 ft_strncmp.c
+
+/tmp/tmpzZeb_H/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  1097 Dec 11 20:19 ft_strcat.c
+
+/tmp/tmpzZeb_H/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  1143 Dec 11 20:19 ft_strncat.c
+
+/tmp/tmpzZeb_H/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  1213 Dec 11 20:19 ft_strstr.c
+
+/tmp/tmpzZeb_H/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  1023 Dec 11 20:19 ft_strlcat.c
+ 
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcmp.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./q7y5n8nem0xtg1q4juuw1mna
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncmp.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./w95pco9v0abzc4e9ewg5k72b
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcat.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./3r5jr4dfgw3s97m6oc489ao5
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncat.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./5nlvn7k0jaoi2k984bxt7iy8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./j0i3qt85h9xh0dm3lamv8u0w
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 25
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlcat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlcat.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./v1alq2hd5fn1haztbvubr04h
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2020-12-11 19:19:48.000000000 +0000$
++++ test1.output	2020-12-11 19:19:48.000000000 +0000$
+@@ -1,41 +1,41 @@$
+-42 mgkgXODdypYKIecHCdVoHq oFEVjcOKDCgxdGtzdHjJSPFiOaatnwugFosbQA$
+-42 OJfAgSkVLZcZnqOzIvcVL kyLQZFAoMZCtQqjJGgimeftpYSopywY$
+-42 OzksZlGXwPDOcwIGiSXsYVBMw nntogAzX$
+-42 EGbsSuTjTZNgpvwWLosJaoYXULSXb RtnzsSeOfkYOqUv$
+-42 XqQYcwnmvzMwzuzGzhbRVxwgYFeJljvgmqXdrbLdrV rJPRaEwvpsAgMkINa$
+-42 pKvMxFRnQMEXzVFQGvVPxxbnJVkMzdDi JTNkiriayEghjNhJOHgqPMStAofDyMOwYrrpiTRx$
+-42 qJDbGhfbghARRpChzQMNgIlOaBaZ nFQBAUcpK$
+-42 kSxXonOVaOTnRIGGJzQeqeIKItqcuntZg IIjxWNIlknewaWysyjC$
+-42 SMXYcCzQCswFNxLfossvvkVCXBgEbdNbvtqeET sstUdu$
+-42  $
+-42 toto $
+-42 toto $
+-42 toto $
+-42 42dfgd l33r$
+-42 42dfgd l33r$
+-42 42dfgd l33r$
+-42 42dfgd l33r$
+-42  pouic$
+-42  pouic$
+-42  pouic$
+-42  pouic$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
+-42 toto bla$
++60 mgkgXODdypYKIecHCdVoHqoFEVjcOKDCgxdGtzdHjJSPFiOaatnwugFosbQA oFEVjcOKDCgxdGtzdHjJSPFiOaatnwugFosbQA$
++52 OJfAgSkVLZcZnqOzIvcVLkyLQZFAoMZCtQqj kyLQZFAoMZCtQqjJGgimeftpYSopywY$
++21 OzksZlGXwPDOcwIGiSXsYVBMw nntogAzX$
++44 EGbsSuTjTZNgpvwWLosJaoYXULSXbRtnzsSeOfkYOqUv RtnzsSeOfkYOqUv$
++59 XqQYcwnmvzMwzuzGzhbRVxwgYFeJljvgmqXdrbLdrVrJPRaEwvpsAgMkINa rJPRaEwvpsAgMkINa$
++46 pKvMxFRnQMEXzVFQGvVPxxbnJVkMzdDi JTNkiriayEghjNhJOHgqPMStAofDyMOwYrrpiTRx$
++29 qJDbGhfbghARRpChzQMNgIlOaBaZ nFQBAUcpK$
++27 kSxXonOVaOTnRIGGJzQeqeIKItqcuntZg IIjxWNIlknewaWysyjC$
++10 SMXYcCzQCswFNxLfossvvkVCXBgEbdNbvtqeET sstUdu$
++0  $
++0 toto $
++4 toto $
++2 toto $
++4 42dfgd l33r$
++10 42dfgdl33 l33r$
++10 42dfgdl33r l33r$
++6 42dfgd l33r$
++5  pouic$
++5 pouic pouic$
++5 p pouic$
++5 pouic pouic$
++3 toto bla$
++4 toto bla$
++5 toto bla$
++6 toto bla$
++7 toto bla$
++7 toto bla$
++7 totob bla$
++7 totobl bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
++7 totobla bla$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 75 ==============================================================
