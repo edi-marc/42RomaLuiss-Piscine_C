@@ -2,7 +2,7 @@
     "Problema delle 8 regine";
     
 * Backtracking algorhytm
-    Solution for Sudoku and also Puzzle Skycreaper;
+    Solution for Sudoku and also Puzzle Skyscreaper;
     
     
 ALSO:
@@ -26,3 +26,43 @@ ALSO:
   l' albero al contrario ripercorrendo altri percorsi.
   
   SOLUZIONE -> STATO COMPLETO CHE NON VIOLA I VINCOLI;
+  
+  PDF UTILE: --> http://ce.sharif.edu/courses/90-91/2/ce417-1/resources/root/Lectures/Chapter-6.pdf (pagina 24)
+  
+  PDF UTILE: --> http://wwwusers.di.uniroma1.it/~asd2/DISP_BT.pdf
+  
+  Puzzle --> https://www.puzzle-skyscrapers.com/
+  
+  ! TODO !
+  
+  * Input Validation
+    una volta validati, i miei indici di visibilita' vengono registrati in una matrice che chiameremo una matrice di check_visibility;
+        --> COME SALVO QUESTA MATRICE ?;
+  
+  * Devo prima verificare che i miei indici di visibilita' possano generare un puzzle risolvibile;
+        --> COME CONTROLLO ?
+  
+  * Se e' risolvibile cerco di risolverlo:
+  
+  * Creazione di una matrice 4X4x4 dove x,y sono le coordinate della matrice mentre z contiene tutte le possibili altezze del grattacielo;
+        --> POI LIMITO z IN BASE AI MIEI VINCOLI (ATTRIBUENDO ALLA z I VALORi DEL MIO DOMINIO, CELLA PER CELLA);
+        
+        --> I VINCOLI SONO IMPOSTI DALLA PRESENZA O MENO DI UN NUMERO PER RIGA O PER COLONNA;
+        
+        --> MA DEVO CONTROLLARE ANCHE SE LA VIIBILITA' E' RISPETTATA, (ULTERIORE VINCOLO);
+                (Possibile controllo puo' essere la relazione con > o <);
+                
+        --> cerco di completare il puzzle facendo supposizioni ed in base a tale supposizione vado avanti nella risoluzione:
+        
+                --> se arrivo a completare il puzzle senza CONTRADDIZIONI, allora ho la soluzione,
+                --> altrimenti se genero una contraddizione torno indietro all' ultima supposizione e continuo la risoluzione con quella,
+                    sostanzialmente sto generando un albero dove. devo controllare. tutti i figli, e la mia soluzione e' il primo ramo che trovo che
+                    non mi porta ad una contraddizione....
+                    
+   COME SCRIVIAMO TUTTO QUESTO ?.
+   
+   Probabile algoritmo che fa un "bruteforce" o algoritmo che risolve per nxn e lo confino in 4x4,
+   
+   BRUTEFORCE --> https://stackoverflow.com/questions/18872553/skyscraper-puzzle-algorithm;
+   
+   N X N --> da confinare a 4x4; --> https://www.krnsk0.dev/writing/skyscraper-puzzle-1
