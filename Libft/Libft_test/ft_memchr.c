@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edi-marc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/11 17:41:07 by edi-marc          #+#    #+#             */
-/*   Updated: 2021/01/13 14:49:36 by edi-marc         ###   ########.fr       */
+/*   Created: 2021/01/15 12:42:52 by edi-marc          #+#    #+#             */
+/*   Updated: 2021/01/15 16:06:01 by edi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t i;
 
 	i = 0;
-	while (str[i])
+	while (i < n)
+	{
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return (&(((void *)s)[i]));
 		i++;
-	return (i);
+	}
+	return (0);
 }

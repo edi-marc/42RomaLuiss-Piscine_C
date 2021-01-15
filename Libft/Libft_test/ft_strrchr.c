@@ -6,11 +6,11 @@
 /*   By: edi-marc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 18:59:34 by edi-marc          #+#    #+#             */
-/*   Updated: 2021/01/11 19:52:37 by edi-marc         ###   ########.fr       */
+/*   Updated: 2021/01/12 16:10:50 by edi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char *p;
 	char ch;
@@ -20,10 +20,10 @@ char	*ft_strrchr(char *s, int c)
 	while (*s != '\0')
 	{
 		if (*s == ch)
-			p = s;
+			p = (char*)s;
 		s++;
 	}
 	if (*s == '\0' && c == 0)
-		p = s;
+		p = (char *)s;
 	return (p);
 }

@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edi-marc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/11 17:41:07 by edi-marc          #+#    #+#             */
-/*   Updated: 2021/01/13 14:49:36 by edi-marc         ###   ########.fr       */
+/*   Created: 2021/01/14 10:47:45 by edi-marc          #+#    #+#             */
+/*   Updated: 2021/01/14 12:59:11 by edi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t i;
 
 	i = 0;
-	while (str[i])
+	if (!src && !dst)
+		return (dst);
+	while (i < n)
+	{
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
-	return (i);
+	}
+	return (dst);
 }

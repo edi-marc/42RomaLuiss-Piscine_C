@@ -6,20 +6,20 @@
 /*   By: edi-marc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 16:17:07 by edi-marc          #+#    #+#             */
-/*   Updated: 2021/01/11 16:17:16 by edi-marc         ###   ########.fr       */
+/*   Updated: 2021/01/15 15:50:44 by edi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*jump_space(char *str)
+static	const char		*jump_space(const char *str)
 {
 	while (*str == 32 || (*str > 8 && *str < 14))
 		str++;
 	return (str);
 }
 
-char	*jump_sign(char *str, int *sign)
+static	const char		*jump_sign(const char *str, int *sign)
 {
-	while (*str == 43 || *str == 45)
+	if (*str == 43 || *str == 45)
 	{
 		if (*str == 45)
 			*sign = *sign * -1;
@@ -28,7 +28,7 @@ char	*jump_sign(char *str, int *sign)
 	return (str);
 }
 
-int		calculate(char *str)
+static	int				calculate(const char *str)
 {
 	int nbr;
 	int k;
@@ -45,7 +45,7 @@ int		calculate(char *str)
 	return (nbr);
 }
 
-int		ft_atoi(char *str)
+int						ft_atoi(const char *str)
 {
 	int sign;
 	int nbr;

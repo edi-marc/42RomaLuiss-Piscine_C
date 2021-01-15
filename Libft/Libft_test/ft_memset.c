@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edi-marc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/11 17:41:07 by edi-marc          #+#    #+#             */
-/*   Updated: 2021/01/13 14:49:36 by edi-marc         ###   ########.fr       */
+/*   Created: 2021/01/12 18:10:52 by edi-marc          #+#    #+#             */
+/*   Updated: 2021/01/13 18:53:47 by edi-marc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t i;
+	char	*p;
+	int		i;
 
+	p = (char *)b;
 	i = 0;
-	while (str[i])
+	while (((size_t)i < len) && len != 0)
+	{
+		*p = (unsigned char)c;
+		p++;
 		i++;
-	return (i);
+	}
+	return (b);
 }
