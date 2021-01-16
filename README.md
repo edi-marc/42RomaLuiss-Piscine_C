@@ -1,2 +1,2 @@
 # 42_Roma
-code and exercise of 42 Roma
+code and exercises of 42 Roma
