@@ -1,2 +1,2 @@
 # 42_Roma
-code and exercises of 42 Roma
+code and exercises for Piscine C of 42 Roma
